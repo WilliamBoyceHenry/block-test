@@ -1,11 +1,12 @@
 let T = 0
+let Mid = 0
 let D = 0
 input.onButtonPressed(Button.A, function () {
-    if (input.buttonIsPressed(Button.B)) {
-        T = 0
-    }
+    control.reset()
 })
 input.onButtonPressed(Button.B, function () {
-    D = T * 3400
+    T = control.millis()
+    Mid = T / 10
+    D = Mid * 340
     basic.showNumber(D)
 })
