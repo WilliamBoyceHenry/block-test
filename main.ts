@@ -12,3 +12,6 @@ input.onButtonPressed(Button.B, function () {
     D = Mid2 / 1609
     basic.showNumber(D)
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.showString("AMONG US")
+})
